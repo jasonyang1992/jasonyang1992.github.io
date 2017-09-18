@@ -1,128 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="This is a website that I programmed for employers and also to anyone who is interested in my previous projects. So please feel free to browse">
-<meta name="keywords" content="Jason, portfolio, projects, web project, C++ project, Java project">
-<link rel="icon" type="image/png" href="images/favicon.ico">
-<title>Jason's Protfolio - Home Page</title>
 
-<!-- Bootstrap -->
-<link href="css/bootstrap.css" rel="stylesheet">
-<link href="css/stylesheet.css" rel="stylesheet" type="text/css">
-</head>
-<body>
-<nav class="navbar navbar-default">
-  <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-      <a class="navbar-brand" href="index.html">Jason's Protfolio</a></div>
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="defaultNavbar1">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="https://github.com/jasonyang1992">Github Page</a></li>
-        <li><a href="mailto:jason.yang@baruchmail.cuny.edu">Contact Me</a></li>
-        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Menu<span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="WebProjects.html">Web Projects</a></li>
-            <li><a href="C++Projects.html">C++ Projects</a></li>
-            <li><a href="JavaProjects.html">Java Projects</a></li>
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Hello and welcome to Jason's portfolio website. This website holds all projects that I have been doing over the past year. This website purpose is to share the knowledge and experience to anyone who is interest in wanting to know me.">
+    <meta name="author" content="Jason Yang">
+    <meta name="keywords" content="Jason, Yang, portfolio, web projects, C++ projects, Java Projects, resume, IT Documentation, Projects">
+
+    <title>Jason's Portfolio - Home Page</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/modern-business.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Jason's Portfolio</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/jasonyang1992">Github</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#About">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mailto:jason.yang@baruchmail.cuny.edu">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Menu
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+                <a class="dropdown-item" href="WebProjects.html">Web Projects</a>
+                <a class="dropdown-item" href="C++.html">C++ Projects</a>
+                <a class="dropdown-item" href="Java.html">Java Projects</a>
+                <a class="dropdown-item" href="ITDocumentation.html">IT Blog</a>
+              </div>
+            </li>
           </ul>
-        </li>
-      </ul>
-    </div>
-    <!-- /.navbar-collapse -->
-  </div>
-  <!-- /.container-fluid -->
-</nav>
-
-<div class="container">
-
-	<div class="row">
-    	<div class="col-md-12">
-        	<h2 class="text-center">About Me</h2>
-            <p class="text-center lgtext">My name is <strong>Jason Yang</strong> I am currently studying computer information system at Baruch College</p>
-            <br/>
-            <p class="text-center lgtext">This is a website that I programmed for employers and also to anyone who is interested in my <strong>previous projects</strong>.</p>
-            <br/>
-            <p class="text-center lgtext">My current career goal is to expose and improve my programming skills in the professional field.</p>
         </div>
-    </div>
+      </div>
+    </nav>
+
+    <header>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <!-- Slide One - Set the background image for this slide in the line below -->
+          <div class="carousel-item active" style="background-image: url('http://placehold.it/1900x1080')">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>First Slide</h3>
+              <p>This is a description for the first slide.</p>
+            </div>
+          </div>
+          <!-- Slide Two - Set the background image for this slide in the line below -->
+          <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Second Slide</h3>
+              <p>This is a description for the second slide.</p>
+            </div>
+          </div>
+          <!-- Slide Three - Set the background image for this slide in the line below -->
+          <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Third Slide</h3>
+              <p>This is a description for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- Page Content -->
+    <div class="container">
+      <a name="#About"> </a>
+      <a name="About"> </a>
+      <h1 class="my-4"><center>Welcome to Jason's Portfolio WebSite</center></h1>
+
+      <!-- Marketing Icons Section -->
+      <div class="row">
+        <div class="col-lg-6">
+          <h2>About Me</h2>
+          <p>Here What I have been up to:</p>
+          <ul>
+            <li>Worked as an IT administrator, learning and implementing new technology to improve our client's infrastructure.</li>
+            <li>On my free time, I have designed and coded interactive websites.</li>
+            <li>Self-improving my coding skills while also learning new programming languages.</li>
+            <li>Studying for certifications and expand my knowledge in the IT field.</li>
+          </ul>
+          <p>My name is Jason Yang and I graduated from Baruch College with a bachelor degree in computer information systems. At a young age, I had a keen interest in computer hardware and software. It was very fascinating learning about how computers work and the limitless potential of what it can do. I enjoy fixing computers while also creating small programs that I like to share in GitHub.</p>
+        </div>
+        <div class="col-lg-6">
+          <img class="img-fluid rounded" src="images\Favicon1.png" alt="">
+        </div>
+      </div>
+      <!-- /.row -->
 <hr>
-    <div class="row">
-    	<div class="col-md-12">
-        	<h2 class="well text-center whitetext">Most Recent Project Worked On</h2>
-        </div>
-        
-        <div class="col-sm-2">
-        	<div class="col-sm-2 text-center">
-        		<a href="https://github.com/jasonyang1992/QuestionGame"><img src="images/QuestionGame.png" alt="Question Game" height="128" width="128"></a>
-        	</div>
-        </div>
+      <!-- Portfolio Section -->
+      <h2>Recent Projects</h2>
 
-        <div class="col-sm-10">
-        <a href="https://github.com/jasonyang1992/QuestionGame"><h3 class="Nomargin">Question Game</h3></a>
-            <hr>
-            <p>
-            	Question Game is a game that will think of what you are thinking. To do so, it will ask you six questions to determine what you are thinking. After that, on the seventh question, the program will then ask what you are thinking. If the program is sucessful in guessing what you are thinking, the program wins. If the program guesses wrong, you win.
-            </p>
+      <div class="row">
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <a href="#"><img class="card-img-top" src="images\WebProjectIcon.png" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">Web Programming Academy</a>
+              </h4>
+              <p class="card-text">Web Programming Academy is a website for anyone who wants to explore web programming. It is a tutorial website for beginner or someone who is interest in making their own website. The tutorial website contains detail explaination for HTML, CSS, and JavaScript code.</p>
+            </div>
+          </div>
         </div>
-      </div>  
-        
-        <hr>
-        
-      <div class="row">        
-    	<div class="col-sm-2">
-        	<div class="col-sm-2 text-center">
-        		<a href="https://github.com/jasonyang1992/CollegeCooking"><img src="images/CollegeCooking/CCLogo.png" alt="College Cooking" height="128" width="128"></a>
-        	</div>
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <a href="#"><img class="card-img-top" src="images\C++ProjectIcon.png" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">Question Game</a>
+              </h4>
+              <p class="card-text">Question Game is a game that will think of what you are thinking. To do so, it will ask you six questions to determine what you are thinking. After that, on the seventh question, the program will then ask what you are thinking. If the program is sucessful in guessing what you are thinking, the program wins. If the program guesses wrong, you win.</p>
+            </div>
+          </div>
         </div>
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <a href="#"><img class="card-img-top" src="images\JavaProjectIcon.png" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">College Cooking</a>
+              </h4>
+              <p class="card-text">College Cooking is a website for College Students that want to learn how to cook simple recipes or create a daily meal for themselves during their college years. This is a project that I worked on as a class project. I used a bootstrap layout to map the website. The websites starts as a random hierarchy and then laters goes into a linear hierarchy.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.row -->
+      <hr>
 
-        <div class="col-sm-10">
-        <a href="https://github.com/jasonyang1992/CollegeCooking"><h3 class="Nomargin">College Cooking</h3></a>
-            <hr>
-            <p>
-            	College Cooking is a website for College Students that want to learn how to cook simple recipes or create a daily meal for themselves during their college years. This is a project that I worked on as a class project. I used a bootstrap layout to map the website. The websites starts as a random hierarchy and then laters goes into a linear hierarchy.
-            </p>
+      <!-- Call to Action Section -->
+      <div class="row mb-4">
+        <div class="col-md-8">
+          <p>I have more projects here. Check them all out. What are you waiting for?</p>
         </div>
+        <div class="col-md-4">
+          <a class="btn btn-lg btn-secondary btn-block" href="#">Check Me Out</a>
+        </div>
+      </div>
+
     </div>
-<hr>
-	<div class="row">
-    	<div class="col-md-12">
-        	<h2 class="well text-center whitetext">Check Out These Other Projects</h2>
-        </div>
-        <div class="col-sm-4 text-center">
-          <h4 class="text-center">Web Projects</h4>
-          <a href="WebProjects.html"><div class="imgresize"><img src="images/WebProjectIcon.png" alt="Web Projects" height="256" width="256"></div></a>
-        </div>
-        <div class="text-center col-sm-4">
-          <h4 class="text-center">C++ Projects</h4>
-          <a href="C++Projects.html"><div class="imgresize"><img src="images/C++ProjectIcon.png" alt="Web Projects" height="256" width="256"></div></a>
-        </div>
-        <div class="text-center col-sm-4">
-          <h4 class="text-center">Java Projects</h4>
-          <a href="JavaProjects.html"><div class="imgresize"><img src="images/JavaProjectIcon.png" alt="Web Projects" height="256" width="256"></div></a>
-        </div>
-    </div>
+    <!-- /.container -->
 
-</div>
-<div class="blackbg">
-  <hr>
-<div class="row">
-    <div class="text-center col-md-6 col-md-offset-3">
-      <p class="whitetext">Copyright &copy; 2015 &middot; All Rights Reserved &middot; <a href="index.html" >Jason's Protfolio</a></p>
-    </div>
-  </div>
-  <hr>
-  </div>
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="js/jquery-1.11.2.min.js"></script>
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; <a href="http://jasonyang1992.github.io">Jason's Portfolio</a> 2017</p>
+      </div>
+      <!-- /.container -->
+    </footer>
 
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.js"></script>
-</body>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  </body>
+
 </html>
