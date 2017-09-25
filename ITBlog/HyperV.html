@@ -99,11 +99,15 @@
 
             <p>I then learned that to access Hyper-V manager in Hyper-V 2016 standalone was using Windows Hyper-V manager from operating systems like Windows 8 or higher. You will also need to add credentials into both the Hyper-V 2016 standalone and the local machine. In my case, I used Windows 10 pro to access the Hyper-V manager (Note It must be a Windows Pro or higher to install Hyper-V manager, not home).</p>
 
+          </div>
+
+          <div class="col-lg-12">
             <hr>
+              <h2>On the Hyper-V server</h2>
+              <br>
           </div>
 
           <div class="col-lg-6">
-            <h2>On the Hyper-V server</h2>
             <ol>
               <li>Download <a href="https://www.microsoft.com/en-us/evalcenter/evaluate-hyper-v-server-2016" target="_blank">Hyper-V 2016</a> Iso then use rufus to store it in bootable USB.</li>
               <li>Boot the USB on the computer and install it like how you would like any other oerpating system.</li>
@@ -115,6 +119,32 @@
 
           <div class="col-lg-6">
               <img class="img-fluid rounded" src="http://placehold.it/700x300" alt="">
+          </div>
+
+          <div class="col-lg-12">
+            <hr>
+            <h2>On The Windows 10 Pro Machine</h2>
+            <br>
+          </div>
+
+          <div class="col-lg-6">
+              <img class="img-fluid rounded" src="http://placehold.it/700x400" alt="">
+          </div>
+
+          <div class="col-lg-6">
+              <ol>
+                <li>Change your network adapter setting, Click Start > Search "Homegroup" > Launch "Homegroup"</li>
+                <li>Locate and edit "C:\Windows\System32\drivers\etc\hosts" as an administrator in notepad then add an entry like "192.168.0.2 <strong>(IP address of the Hyper-V)</strong> server-1<strong>(Name of the Hyper-V)</strong>"</li>
+                <li>In powershell enter the following
+                  <ol type="I">
+                    <li>Set-Item WSMan:\localhost\Client\TrustedHosts -Value server-1(Name of the Hyper=V)</li>
+                    <li>Enable-WSManCredSSP -Role client -DelegateComputer server-1</li>
+                    <li>Enable-WindowsOptionalFeature -Online -FeatureName:Microsoft-Hyper-V -All</li>
+                    <li>cmdkey /add:server-1 /user:Administrator /pass</li>
+                  </ol>
+                </li>
+
+              </ol>
           </div>
 
           <div class="col-lg-12">
