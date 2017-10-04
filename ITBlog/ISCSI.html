@@ -91,15 +91,9 @@
           <hr>
 
           <!-- Post Content -->
-            <p class="lead">Installing Windows 10 on a few computers is no problem at all however installing over 100 computers is too time consuming, especially when you need to install the software along with it.</p>
+            <p class="lead">This project was a very complex project that I felt was very stressful because it was difficult understand how ISCSI works. The scope of this project is to create a single point of failure where multiple servers can boot from the same hard drive disk.</p>
 
-            <p><a href="https://www.veeam.com/windows-endpoint-server-backup-free.html" target="_blank">Veeam endpoint backup</a> software is known as a backup solution however my colleague saw an opportunity to use this software to distribute a vanilla image to multiple machines in a short period time. Currently installing Windows 10 pro along with third party software takes 30-40 minutes for each machine. Multiple the number of computers we must go through, this can take hours to properly set up a workstation.</p>
-
-            <p>My colleague of mine decided that we should install windows 10 pro into a virtual machine using VMware and install all the basic software that a user would use along with windows updates. Once we have successfully completed that part, we then downloaded Veeam backup endpoint, installed it, and then backed up the virtual machine. The backup file is created and we can use that file to restore on multiple computers. </p>
-
-            <p>We then create a Veeam ISO from the Veeam software to be booted on to the computers. This would mean we would need to create multiple bootable USB to boot from. Although this idea does not make it efficient, my colleague proposed PXE boot. PXE boot, can be used to boot over the network rather than USB which is much more convenient to do since all the computers are going to be connected through the network.</p>
-
-            <p>To get to PXE boot, we needed to set up a server that will host the bootable file and allow computers to use that Veeam ISO. Once that was set up, Computers can boot from the network connecting to the PXE server, ultimately booting from the Veeam ISO. After that it is simple as clicking a few buttons like connecting to the share drive to access that backup file. Restore the backup, and everything will be efficiently done in less time. Through testing the restoration to the backup, it only took 10 minutes to restore the image. </p>
+            <p></p>
           </div>
 
           <div class="col-lg-12">
