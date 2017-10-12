@@ -93,7 +93,17 @@
           <!-- Post Content -->
             <p class="lead">Finding a firewall solution that can protect us from outside threat while also easy to maintain was somewhat difficult however after doing research about the PF-Sense, this was a possible solution.</p>
 
-            <p></p>
+            <p><a href="https://www.pfsense.org/" target="_blank">PF-Sense</a> is an open source firewall that can block most threats from the outside world. The most interesting thing about the PF-Sense was that you can install this as an operating system in a computer. It can be managed in the console but mainly managed in the web GUI to be more effective. My impression of the PF-sense was astonished because of the number of features there are in this firewall. IT was simple to set-up by following YouTube tutorials along with some documentation from their website.</p>
+
+            <p>The requirements for the PF-Sense is so minimal that an old computer that you haven’t used for several years could be used as a host for the PF-sense. 100mhz CPU, 128mb RAM, at least 1 GB of storage, and 2 NICS would be sufficient to host PF-sense. It is also possible to virtualize the firewall if you wanted to, but I chose to have a physical PF-sense because it would be much easier to network wiring for it.</p>
+
+            <p>By default, the PF-Sense blocks everything in the WAN connection. The WAN connection is the connection from your ISP to the PF-sense. If you need to open ports for other people to access your network outside of your network, this was the place where you would do it. I only open ports for VPN access and that was about it. In the LAN connection, nothing by default is blocked therefore I left it the way it was. There wasn’t anything I felt the need to block.</p>
+
+            <hr>
+
+            <p>There are several, features that I found very interesting when I was playing around with the web GUI. Squid guard, captive portal, and OpenVPN were the features that caught my eye and it gave me so much more control over my network. There were many features that were intriguing however I focused on the feature that made life easy to manage over the PF-sense</p>
+
+            <p>Squid Guard gave me control of which sites I could block in the network. I thought it was a good idea to block sites that would give viruses or prevent people from downloading certain software that could possibly do damage to the network. Captive portal captured anyone who is trying to get into the network and put them in a login screen. I can then administrate usernames and passwords for people who get access to the network. I can also limit what they can do as well as terminate them from accessing the network. Lastly the OpenVPN allow at home users to access company’s network. It was very simple to set-up the VPN where I had no issues. </p>
           </div>
 
           <div class="col-lg-12">
