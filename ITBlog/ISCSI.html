@@ -93,7 +93,17 @@
           <!-- Post Content -->
             <p class="lead">This project was a very complex project that I felt was very stressful because it was difficult understand how ISCSI works. The scope of this project is to create a single point of failure where multiple servers can boot from the same hard drive disk.</p>
 
-            <p></p>
+            <p>To begin this project, I used the Broadcom NICs that came along with the Dell Powerededge servers. Through some research that I found from Google, I learned that Dell Poweredge servers have Broadcom NICs that support ISCSI boot. I went to the system setup in the bios and enabled ISCSI boot into the NICs.</p>
+
+            <p>After a restart I was able to configure the ISCSI configuration in the bios. In this configuration setting, I needed to disable most features because I needed to initialize the ISCSI but not actually boot into the LUN. I then added the IQN of the SAN and the server which you can get from the web GUI of the SAN device along from the server itself. I also had to give the NIC an IP address as well.</p>
+
+            <p>After I finished configuring the ISCSI, I added a USB into the server that contain the installation of Hyper V 2016. I then went to the system setup to have the NIC to be booted first and then the USB. I also disable the raid controller to prevent the server from booting from the hard disk that were already inside it.</p>
+
+            <p>Once that was all set up, I booted into the NIC and saw the ISCSI configurations. I reviewed the setting just to make sure everything was correct, and it was a success. It then booted from the USB Hyper V 2016. I went through the usual installation like how you would normally install an operating system and on the prompt, that asks where I want to install the operating system. I selected the disk that was created through the ISCSI LUN. </p>
+
+            <p>When the installation is finished, I went back to the ISCSI configuration and enable the ISCSI boot setting and boot first on the hard disk. I also removed the USB in the back. Once that was done I let the server restart to boot from the NIC. It showed me again the configuration and it was a success. It booted from the ISCSI LUN with a fresh installation of Hyper V 2016. </p>
+
+            <p>The project was a complete success and I was very happy to be a part of the success.</p>
           </div>
 
           <div class="col-lg-12">
