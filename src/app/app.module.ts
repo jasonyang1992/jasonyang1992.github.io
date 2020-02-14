@@ -9,7 +9,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { NavBarComponent } from './Components/nav-bar/nav-bar.component';
 import { FooterComponent } from './Components/footer/footer.component';
 import { WebprojectsComponent } from './Components/webprojects/webprojects.component';
-import { CplusplusComponent } from './Components/Cplusplus/Cplusplus.component';
+import { CplusplusComponent } from './Components/cplusplus/cplusplus.component';
 import { JavaComponent } from './Components/java/java.component';
 import { ITBlogComponent } from './Components/itblog/itblog.component';
 

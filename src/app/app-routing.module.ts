@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { MainComponent } from './Components/main/main.component';
 import { WebprojectsComponent } from './Components/webprojects/webprojects.component';
-import { CplusplusComponent } from './Components/Cplusplus/Cplusplus.component';
+import { CplusplusComponent } from './Components/cplusplus/cplusplus.component';
 import { JavaComponent } from './Components/java/java.component';
 import { ITBlogComponent } from './Components/itblog/itblog.component';
 
